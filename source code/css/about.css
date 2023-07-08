@@ -1,0 +1,131 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+main {
+    height: fit-content;
+}
+
+main h1 {
+    color:green;
+    text-align: center;
+    width:100%;
+    height:50px;
+}
+
+.welcome {
+    width:90%;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin:50px auto 0 auto;
+    align-items: center;
+}
+
+.mission {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 0 auto;
+    align-items: center;
+}
+
+.explore {
+    width:90%;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 auto 0 auto;
+    align-items: center;
+}
+
+.icon {
+    width:30%;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: #1f513a;
+}
+
+.mission .icon {
+    transform: translateX(30px);
+}
+
+.hide {
+    display: none;
+}
+
+.explore .icon {
+    transform: translateX(-25px);
+}
+
+.texts {
+    width:70%;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: larger;
+}
+
+.green {
+    color:green;
+    font-weight: bold;
+}
+
+.expbtn {
+    width: 100%;
+    margin: 15px auto 15px auto;
+    display:flex;
+    justify-content: center;
+}
+
+.expbtn button {
+    padding:10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: #1f513a;
+    color:#1f513a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.expbtn button:hover {
+    background-color: #1f513a;
+    color:white;
+}
+
+@media screen and (max-width: 800px) {
+    .icon  {
+        font-size: 60px;
+    }
+    .explore .icon {
+        width: 100%;
+    }
+    .explore .texts {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .icon {
+        margin: 0 auto 0 auto;
+        height:200px;
+        width: 100%;
+        transform:translateX(0) !important;
+        transform: translateY(0) !important;
+    }
+    .texts {
+        width: 100%;
+    }
+    .mission .icon {
+        display:none;
+    }
+    .hide {
+        display:flex !important;
+    }
+}
+
